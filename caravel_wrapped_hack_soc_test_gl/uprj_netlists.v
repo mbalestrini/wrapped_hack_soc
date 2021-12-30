@@ -27,6 +27,7 @@
 `else
     `include "user_project_wrapper.v"
     //  6 ('Hack soc',)                  : ../../wrapped_hack_soc
-	`include "wrapped_hack_soc.lvs.powered.v"
+	`include "wrapped_hack_soc_dffram.lvs.powered.v"
+	`include "DFFRF_2R1W.powered.nl.v"
 
 `endif

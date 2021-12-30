@@ -11,7 +11,7 @@
 //`define USE_CLK2 0
 
 
-module wrapped_hack_soc(
+module wrapped_hack_soc_dffram(
 `ifdef USE_POWER_PINS
     // inout vdda1,	// User area 1 3.3V supply
     // inout vdda2,	// User area 2 3.3V supply

@@ -102,13 +102,13 @@ module user_project_wrapper #(
     assign la3_data_out = la_data_out[127:96];
     assign la3_oenb = la_oenb[127:96];
 
-    wrapped_hack_soc wrapped_hack_soc_6(
+    wrapped_hack_soc_dffram wrapped_hack_soc_dffram_8(
         `ifdef USE_POWER_PINS
         .vccd1 (vccd1),
         .vssd1 (vssd1),
         `endif
         .wb_clk_i (wb_clk_i),
-        .active (active[6]),
+        .active (active[8]),
         .la1_data_in (la1_data_in[31:0]),
         .la1_data_out (la1_data_out[31:0]),
         .la1_oenb (la1_oenb[31:0]),
