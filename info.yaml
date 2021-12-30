@@ -15,7 +15,7 @@ interfaces: ['la1', 'gpio']
 caravel_test:
   recipe: "coco_test"
   directory: "caravel_wrapped_hack_soc_test"
-  id: 8
+  id: 9
   module_name: "wrapped_hack_soc_dffram"
   instance_name: "wrapped_hack_soc_dffram"
 

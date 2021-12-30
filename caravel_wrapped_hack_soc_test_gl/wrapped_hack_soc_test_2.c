@@ -23,7 +23,7 @@
 
 #include "caravel_test_hack_program.c"
 
-#define MULTIPROJECT_ID					8
+#define MULTIPROJECT_ID					9
 
 #define RESET__LA1_BIT					0
 #define KEYCODE__LA1_BIT				1
