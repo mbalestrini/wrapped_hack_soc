@@ -112,3 +112,5 @@ set ::env(FP_PIN_ORDER_CFG)  "$::env(DESIGN_DIR)/pin_order.cfg"
 #set ::env(LEFT_MARGIN_MULT) 20
 #set ::env(RIGHT_MARGIN_MULT) 20
 set ::env(FP_TAPCELL_DIST) 10
+
+set ::env(BASE_SDC_FILE) "$::env(DESIGN_DIR)/wrapped_hack_soc_dffram.sdc"
