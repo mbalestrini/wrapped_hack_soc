@@ -16,7 +16,7 @@ custom_cells_file: gds/DFFRF_2R1W.powered.nl.v
 caravel_test:
   recipe: "coco_test"
   directory: "caravel_wrapped_hack_soc_test"
-  id: 9
+  id: 11
   module_name: "wrapped_hack_soc_dffram"
   instance_name: "wrapped_hack_soc_dffram"
 
