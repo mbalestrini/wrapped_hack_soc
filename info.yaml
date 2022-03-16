@@ -10,11 +10,12 @@ project:
 
 interfaces: ['la1', 'gpio']
 
-custom_cells_file: gds/DFFRF_2R1W.powered.nl.v
+custom_cells_file: hack_soc/macros/verilog/DFFRF_2R1W.powered.nl.v
 
 # test within caravel
 caravel_test:
   recipe: "coco_test"
+  gl_recipe: "coco_test_gl"
   directory: "caravel_wrapped_hack_soc_test"
   id: 11
   module_name: "wrapped_hack_soc_dffram"
@@ -56,7 +57,7 @@ source:
 
 # gds - check size = 300x300, nothing on metal 5, do a DRC, check 141 tristate buffers, check LVS
 gds:
-  directory: "gds"
-  gds_filename: "wrapped_hack_soc_dffram.gds"
-  lvs_filename: "wrapped_hack_soc_dffram.lvs.powered.v"
-  lef_filename: "wrapped_hack_soc_dffram.lef"
+  directory: "final"
+  gds_filename: "gds/wrapped_hack_soc_dffram.gds"
+  lvs_filename: "verilog/gl/wrapped_hack_soc_dffram.v"
+  lef_filename: "lef/wrapped_hack_soc_dffram.lef"
