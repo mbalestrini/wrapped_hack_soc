@@ -15,7 +15,8 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#include "verilog/dv/caravel/defs.h"
+// #include "verilog/dv/caravel/defs.h"
+#include <defs.h>
 
 #include <stdint.h> 
 
@@ -44,14 +45,52 @@ struct logic_analyzer_t {
 	uint8_t rom_loader_sck;
 	uint8_t rom_loader_load;
 	uint16_t rom_loader_data;
+	uint8_t hack_external_reset;
 	// Inputs to Pico
 	uint8_t rom_loader_ack;	
-	uint8_t hack_external_reset;
+
 } logic_analyzer;
 
 
+volatile uint32_t tmp_la1_data;
+
+void rom_loader() 
+{
+	
+	uint8_t program_size = ARRAY_LENGTH(hack_program);
 
 
+
+	// Start ROM LOADING
+	logic_analyzer.rom_loader_load = 1;
+	tmp_la1_data = (tmp_la1_data & ~(1<<ROM_LOADER_LOAD__LA1_BIT)) | (logic_analyzer.rom_loader_load << ROM_LOADER_LOAD__LA1_BIT);
+
+	
+	for (int i = 0; i < program_size; ++i) {
+		
+		logic_analyzer.rom_loader_data = hack_program[i];				
+		tmp_la1_data = (tmp_la1_data & ~(0xffff<<ROM_LOADER_DATA__LA1_BIT)) | (logic_analyzer.rom_loader_data << ROM_LOADER_DATA__LA1_BIT);
+		logic_analyzer.rom_loader_sck = 1;
+		tmp_la1_data = (tmp_la1_data & ~(1<<ROM_LOADER_SCK__LA1_BIT)) | (logic_analyzer.rom_loader_sck << ROM_LOADER_SCK__LA1_BIT);
+		reg_la1_data = tmp_la1_data;
+		
+		// TODO: Here I need to wait for the ACK. Without it only works if the code is slow enough for the HACK_SOC to process it before changing the rom_loader_sck line
+		// But right now the ACK signal it lasts only one clock, so it might be hard to get. I should change that in the rtl
+
+
+		logic_analyzer.rom_loader_sck = 0;
+		tmp_la1_data = (tmp_la1_data & ~(1<<ROM_LOADER_SCK__LA1_BIT)) | (logic_analyzer.rom_loader_sck << ROM_LOADER_SCK__LA1_BIT);
+		reg_la1_data = tmp_la1_data;		
+		
+	}
+
+
+	// Finished ROM LOADING
+	logic_analyzer.rom_loader_load = 0;
+	tmp_la1_data = (tmp_la1_data & ~(1<<ROM_LOADER_LOAD__LA1_BIT)) | (logic_analyzer.rom_loader_load << ROM_LOADER_LOAD__LA1_BIT);
+	reg_la1_data = tmp_la1_data;	
+
+}
 
 void main()
 {
@@ -152,16 +191,17 @@ void main()
 
 
 	// Default value for LA[31:0] = OUTPUT
-	reg_la1_oenb = 0;
-	reg_la1_iena = 0;
+	reg_la1_oenb = reg_la1_iena = 0xFFFFFFFF;
+	// reg_la1_iena = 0;
 
 	// rom_loader_ack is input 
-	reg_la1_oenb = reg_la1_oenb | ( 1<< ROM_LOADER_ACK__LA1_BIT );
-	reg_la1_iena = reg_la1_iena | ( 1<< ROM_LOADER_ACK__LA1_BIT );
+	// reg_la1_iena  = reg_la1_oenb  = ~( 1<< ROM_LOADER_ACK__LA1_BIT );
+	reg_la1_iena  = reg_la1_oenb = (reg_la1_oenb & ~( 1<< ROM_LOADER_ACK__LA1_BIT ));
+	// reg_la1_iena = reg_la1_iena | ( 1<< ROM_LOADER_ACK__LA1_BIT );
 
 	
 
-	uint32_t tmp_la1_data;
+	
 
 	// system reset
 	logic_analyzer.reset = 1;
@@ -186,8 +226,8 @@ void main()
 
 
     // activate the project by setting the [project ID] bit of 2nd bank of LA
-    reg_la0_iena = 0; // input enable off
-    reg_la0_oenb = 0; // output enable on
+    reg_la0_iena = 0xFFFFFFFF; // input enable off
+    reg_la0_oenb = 0xFFFFFFFF; // output enable on
     reg_la0_data = 1 << MULTIPROJECT_ID;
 
 
@@ -196,36 +236,8 @@ void main()
 	tmp_la1_data = (tmp_la1_data & ~(1<<RESET__LA1_BIT)) | (logic_analyzer.reset << RESET__LA1_BIT);
 	reg_la1_data = tmp_la1_data;
 
-
-	uint8_t program_size = ARRAY_LENGTH(hack_program);
-
-
-
-	// Start ROM LOADING
-	logic_analyzer.rom_loader_load = 1;
-	tmp_la1_data = (tmp_la1_data & ~(1<<ROM_LOADER_LOAD__LA1_BIT)) | (logic_analyzer.rom_loader_load << ROM_LOADER_LOAD__LA1_BIT);
-
 	
-	for (int i = 0; i < program_size; ++i) {
-		
-		logic_analyzer.rom_loader_data = hack_program[i];				
-		tmp_la1_data = (tmp_la1_data & ~(0xffff<<ROM_LOADER_DATA__LA1_BIT)) | (logic_analyzer.rom_loader_data << ROM_LOADER_DATA__LA1_BIT);
-		logic_analyzer.rom_loader_sck = 1;
-		tmp_la1_data = (tmp_la1_data & ~(1<<ROM_LOADER_SCK__LA1_BIT)) | (logic_analyzer.rom_loader_sck << ROM_LOADER_SCK__LA1_BIT);
-		reg_la1_data = tmp_la1_data;
-
-		logic_analyzer.rom_loader_sck = 0;
-		tmp_la1_data = (tmp_la1_data & ~(1<<ROM_LOADER_SCK__LA1_BIT)) | (logic_analyzer.rom_loader_sck << ROM_LOADER_SCK__LA1_BIT);
-		reg_la1_data = tmp_la1_data;		
-		
-	}
-
-
-	// Finished ROM LOADING
-	logic_analyzer.rom_loader_load = 0;
-	tmp_la1_data = (tmp_la1_data & ~(1<<ROM_LOADER_LOAD__LA1_BIT)) | (logic_analyzer.rom_loader_load << ROM_LOADER_LOAD__LA1_BIT);
-	reg_la1_data = tmp_la1_data;		
-
+	rom_loader();
 
 
 	logic_analyzer.hack_external_reset = 0;

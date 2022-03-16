@@ -1,28 +1,31 @@
 [*]
-[*] GTKWave Analyzer v3.3.86 (w)1999-2017 BSI
-[*] Wed Jun 16 04:09:57 2021
+[*] GTKWave Analyzer v3.3.111 (w)1999-2020 BSI
+[*] Wed Mar 16 12:10:52 2022
 [*]
-[dumpfile] "/home/videogamo/Work/ZeroToAsic_Course/caravel_user_project/verilog/dv/caravel_wrapped_hack_soc_test/wrapped_hack_soc_test_2_tb.vcd"
-[dumpfile_mtime] "Wed Jun 16 04:08:42 2021"
-[dumpfile_size] 158376799
-[savefile] "/home/videogamo/Work/ZeroToAsic_Course/caravel_user_project/verilog/dv/caravel_wrapped_hack_soc_test/wrapped_hack_soc_test_2_tb.gtkw"
-[timestart] 0
-[size] 1920 1147
-[pos] -9 -23
-*-26.000000 235200000 143475000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[dumpfile] "/home/videogamo/Work/mpw5/caravel_user_project/verilog/dv/wrapped_hack_soc_test_2/wrapped_hack_soc_test_2_tb.vcd"
+[dumpfile_mtime] "Wed Mar 16 12:10:24 2022"
+[dumpfile_size] 1207084
+[savefile] "/home/videogamo/Work/mpw5/caravel_user_project/verilog/dv/wrapped_hack_soc_test_2/wrapped_hack_soc_test_2_tb.gtkw"
+[timestart] 1043300000
+[size] 1910 1143
+[pos] -1 -1
+*-25.999998 538100000 143475000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] wrapped_hack_soc_test_2_tb.
 [treeopen] wrapped_hack_soc_test_2_tb.uut.
 [treeopen] wrapped_hack_soc_test_2_tb.uut.mprj.
-[treeopen] wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.
-[treeopen] wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.soc.
-[treeopen] wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.soc.spi_video_ram_1.
+[treeopen] wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc_dffram_11.
+[treeopen] wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc_dffram_11.soc.
+[treeopen] wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc_dffram_11.soc.spi_video_ram_1.
+[treeopen] wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc_dffram_11.soc.spi_video_ram_1.write_fifo.
+[treeopen] wrapped_hack_soc_test_2_tb.uut.soc.
+[treeopen] wrapped_hack_soc_test_2_tb.uut.soc.core.
+[treeopen] wrapped_hack_soc_test_2_tb.uut.soc.core.VexRiscv.
 [sst_width] 335
 [signals_width] 284
 [sst_expanded] 1
-[sst_vpaned_height] 344
+[sst_vpaned_height] 348
 @28
 wrapped_hack_soc_test_2_tb.RSTB
-wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.active
 @c00022
 wrapped_hack_soc_test_2_tb.mprj_io[37:0]
 @28
@@ -67,255 +70,27 @@ wrapped_hack_soc_test_2_tb.mprj_io[37:0]
 @1401200
 -group_end
 @28
-wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.hack_soc_reset
-@c00022
-wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
-@28
-(0)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
-(1)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
-(2)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
-(3)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
-(4)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
-(5)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
-(6)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
-(7)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
-(8)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
-(9)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
-(10)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
-(11)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
-(12)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
-(13)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
-(14)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
-(15)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
-(16)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
-(17)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
-(18)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
-(19)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
-(20)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
-(21)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
-(22)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
-(23)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
-(24)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
-(25)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
-(26)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
-(27)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
-(28)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
-(29)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
-(30)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
-(31)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
-@1401200
--group_end
-@c00022
-wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
-@28
-(0)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
-(1)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
-(2)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
-@c00200
--rom_loader
-@c00028
-#{load_received} (3)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
-@28
-(3)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
-@1401200
--group_end
-@c00028
-#{ack} (4)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
-@28
-(4)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
-@1401200
--group_end
-@28
-(5)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
-(6)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
-(7)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
-(8)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
-(9)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
-(10)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
-(11)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
-(12)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
-(13)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
-(14)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
-(15)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
-(16)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
-(17)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
-(18)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
-(19)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
-(20)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
-@800028
-#{load} (21)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
-@28
-(21)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
-@1001200
--group_end
-@c00028
-+{sck} #{reset} (22)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
-@28
-(22)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
-@1401200
--group_end
--rom_loader
-@800022
-#{unused} (30)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0] (29)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0] (28)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0] (27)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0] (26)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0] (25)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0] (24)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0] (23)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
-@28
-(23)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
-(24)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
-(25)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
-(26)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
-(27)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
-(28)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
-(29)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
-(30)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
-@1001200
--group_end
-@c00200
--project_reset
-@28
-(31)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
-@1401200
--project_reset
--group_end
-@c00022
-wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
-@28
-(0)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
-(1)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
-(2)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
-(3)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
-(4)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
-(5)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
-(6)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
-(7)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
-(8)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
-(9)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
-(10)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
-(11)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
-(12)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
-(13)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
-(14)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
-(15)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
-(16)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
-(17)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
-(18)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
-(19)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
-(20)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
-(21)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
-(22)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
-(23)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
-(24)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
-(25)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
-(26)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
-(27)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
-(28)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
-(29)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
-(30)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
-(31)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
-@1401200
--group_end
+wrapped_hack_soc_test_2_tb.uut.caravel_rstn
+wrapped_hack_soc_test_2_tb.clock
+wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc_dffram_11.active
 @800200
--hack_cpu
+-HACK_SOC
 @28
-wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.soc.hack_clk
-[color] 7
-wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.soc.hack_reset
-wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.hack_external_reset
+wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc_dffram_11.hack_soc_reset
+wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc_dffram_11.soc.hack_reset
+wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc_dffram_11.hack_external_reset
+wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc_dffram_11.soc.hack_clk
 @24
-wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.soc.hack_pc[14:0]
-@28
-wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.soc.cpu.PC.load
+wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc_dffram_11.soc.hack_pc[14:0]
 @22
-wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.soc.hack_instruction[15:0]
-wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.soc.hack_addressM[14:0]
+wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc_dffram_11.soc.hack_instruction[15:0]
+wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc_dffram_11.soc.hack_addressM[14:0]
 @28
-wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.soc.hack_writeM
-@22
-wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.soc.hack_inM[15:0]
-wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.soc.hack_outM[15:0]
-wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.soc.cpu.areg_out[15:0]
-wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.soc.cpu.dreg_out[15:0]
+wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc_dffram_11.soc.hack_writeM
 @1000200
--hack_cpu
-@c00200
--display
-@28
-wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.soc.video_generator_1.i_rst
-wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.soc.display_active
-wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.soc.display_vsync
-wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.soc.display_hsync
-wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.soc.display_rgb
-@22
-wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.soc.display_vpos[9:0]
-wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.soc.display_hpos[9:0]
-@1401200
--display
-@c00022
-+{wrapped_hack_soc_test_2_tb.mprj_io[37:0]} wrapped_hack_soc_test_2_tb.mprj_io[37:0]
-@28
-(0)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
-(1)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
-(2)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
-(3)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
-(4)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
-(5)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
-(6)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
-(7)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
-@c00200
--video
-@28
-(8)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
-(9)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
-(10)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
-@1401200
--video
-@c00200
--hack_external_reset
-@28
-(11)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
-@1401200
--hack_external_reset
-@c00200
--srams
-@28
-(12)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
-(13)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
-(14)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
-(15)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
-(16)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
-(17)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
-(18)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
-(19)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
-(20)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
-(21)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
-(22)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
-(23)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
-(24)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
-(25)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
-(26)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
-(27)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
-(28)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
-(29)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
-@1401200
--srams
-@28
-(30)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
-(31)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
-(32)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
-(33)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
-(34)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
-(35)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
-(36)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
-(37)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
-@1401200
--group_end
-@c00200
--rom
-@28
-wrapped_hack_soc_test_2_tb.rom.CS_N
-wrapped_hack_soc_test_2_tb.rom.SCK
-wrapped_hack_soc_test_2_tb.rom.InstructionREAD
-wrapped_hack_soc_test_2_tb.rom.InstructionWRITE
-@c00200
--mem
+-HACK_SOC
+@800200
+-ROM
 @22
 wrapped_hack_soc_test_2_tb.rom.MemoryByte00000[7:0]
 wrapped_hack_soc_test_2_tb.rom.MemoryByte00001[7:0]
@@ -327,18 +102,23 @@ wrapped_hack_soc_test_2_tb.rom.MemoryByte00006[7:0]
 wrapped_hack_soc_test_2_tb.rom.MemoryByte00007[7:0]
 wrapped_hack_soc_test_2_tb.rom.MemoryByte00008[7:0]
 wrapped_hack_soc_test_2_tb.rom.MemoryByte00009[7:0]
-@1401200
--mem
--rom
-@c00200
--ram
+wrapped_hack_soc_test_2_tb.rom.MemoryByte0000A[7:0]
+wrapped_hack_soc_test_2_tb.rom.MemoryByte0000B[7:0]
+wrapped_hack_soc_test_2_tb.rom.MemoryByte0000C[7:0]
+wrapped_hack_soc_test_2_tb.rom.MemoryByte0000D[7:0]
+wrapped_hack_soc_test_2_tb.rom.MemoryByte0000E[7:0]
+wrapped_hack_soc_test_2_tb.rom.MemoryByte0000F[7:0]
 @28
-wrapped_hack_soc_test_2_tb.ram.CS_N
-wrapped_hack_soc_test_2_tb.ram.SCK
-wrapped_hack_soc_test_2_tb.ram.InstructionREAD
-wrapped_hack_soc_test_2_tb.ram.InstructionWRITE
-@800200
--mem
+wrapped_hack_soc_test_2_tb.rom.CS_N
+wrapped_hack_soc_test_2_tb.rom.IOMode[1:0]
+wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc_dffram_11.soc.rom_encoder_0.initialized
+@22
+wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc_dffram_11.soc.rom_encoder_0.initializing_step[4:0]
+wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc_dffram_11.soc.rom_encoder_0.sio_o[3:0]
+@1000200
+-ROM
+@c00200
+-RAM
 @22
 wrapped_hack_soc_test_2_tb.ram.MemoryByte00000[7:0]
 wrapped_hack_soc_test_2_tb.ram.MemoryByte00001[7:0]
@@ -356,28 +136,10 @@ wrapped_hack_soc_test_2_tb.ram.MemoryByte0000C[7:0]
 wrapped_hack_soc_test_2_tb.ram.MemoryByte0000D[7:0]
 wrapped_hack_soc_test_2_tb.ram.MemoryByte0000E[7:0]
 wrapped_hack_soc_test_2_tb.ram.MemoryByte0000F[7:0]
-@1000200
--mem
 @1401200
--ram
-@800200
--vram
-@28
-wrapped_hack_soc_test_2_tb.vram.CS_N
-wrapped_hack_soc_test_2_tb.vram.InstructionREAD
-wrapped_hack_soc_test_2_tb.vram.InstructionWRITE
-@29
-wrapped_hack_soc_test_2_tb.vram.InstructionEQIO
-@28
-wrapped_hack_soc_test_2_tb.vram.RESET
-wrapped_hack_soc_test_2_tb.vram.SCK
-@22
-wrapped_hack_soc_test_2_tb.vram.ClockCounter[31:0]
-wrapped_hack_soc_test_2_tb.vram.AddrRegister[16:0]
-wrapped_hack_soc_test_2_tb.vram.DataShifterO[7:0]
-wrapped_hack_soc_test_2_tb.vram.DataShifterI[7:0]
+-RAM
 @c00200
--mem
+-VRAM
 @22
 wrapped_hack_soc_test_2_tb.vram.MemoryByte00000[7:0]
 wrapped_hack_soc_test_2_tb.vram.MemoryByte00001[7:0]
@@ -385,63 +147,63 @@ wrapped_hack_soc_test_2_tb.vram.MemoryByte00002[7:0]
 wrapped_hack_soc_test_2_tb.vram.MemoryByte00003[7:0]
 wrapped_hack_soc_test_2_tb.vram.MemoryByte00004[7:0]
 wrapped_hack_soc_test_2_tb.vram.MemoryByte00005[7:0]
-wrapped_hack_soc_test_2_tb.vram.MemoryByte00006[7:0]
-wrapped_hack_soc_test_2_tb.vram.MemoryByte00007[7:0]
-wrapped_hack_soc_test_2_tb.vram.MemoryByte00008[7:0]
-wrapped_hack_soc_test_2_tb.vram.MemoryByte00009[7:0]
 @1401200
--mem
-@1000200
--vram
-@c00022
-wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
+-VRAM
 @28
-(0)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
-(1)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
-(2)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
-(3)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
-(4)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
-(5)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
-(6)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
-(7)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
-(8)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
-(9)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
-(10)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
-(11)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
-(12)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
-(13)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
-(14)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
-(15)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
-(16)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
-(17)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
-(18)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
-(19)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
-(20)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
-(21)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
-(22)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
-(23)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
-(24)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
-(25)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
-(26)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
-(27)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
-(28)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
-(29)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
-(30)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
-(31)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
-(32)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
-(33)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
-(34)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
-(35)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
-(36)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
-(37)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
-@1401200
--group_end
-@28
-wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.soc.spi_video_ram_1.current_state[2:0]
-@24
-wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.soc.spi_video_ram_1.state_counter[10:0]
+wrapped_hack_soc_test_2_tb.vram.CS_N
 @22
-wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.soc.gpio_i[3:0]
-wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.soc.gpio_o[3:0]
+wrapped_hack_soc_test_2_tb.vram.SO_DO[3:0]
+@28
+wrapped_hack_soc_test_2_tb.vram.OpMode[1:0]
+wrapped_hack_soc_test_2_tb.vram.RESET
+@22
+wrapped_hack_soc_test_2_tb.vram.AddrRegister[16:0]
+@28
+wrapped_hack_soc_test_2_tb.vram.InstructionWRITE
+@800200
+-rom_loader
+@28
+wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc_dffram_11.rom_loader_load
+wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc_dffram_11.soc.rom_loader_request
+@29
+wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc_dffram_11.rom_loader_sck
+@22
+wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc_dffram_11.rom_loader_data[15:0]
+@28
+wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc_dffram_11.rom_loader_ack
+@1000200
+-rom_loader
+@800200
+-video fifo
+@28
+wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc_dffram_11.soc.spi_video_ram_1.write_fifo.reset
+@22
+wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc_dffram_11.soc.spi_video_ram_1.write_fifo.items_count[4:0]
+@28
+wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc_dffram_11.soc.spi_video_ram_1.write_fifo.write_request
+@22
+wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc_dffram_11.soc.spi_video_ram_1.write_fifo.write_address[15:0]
+wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc_dffram_11.soc.spi_video_ram_1.write_fifo.write_data[15:0]
+@1000200
+-video fifo
+@28
+wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc_dffram_11.soc.spi_video_ram_1.display_active
+wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc_dffram_11.soc.spi_video_ram_1.write_to_sram_ready
+@800200
+-spiflash
+@28
+wrapped_hack_soc_test_2_tb.spiflash.csb
+wrapped_hack_soc_test_2_tb.spiflash.io0
+wrapped_hack_soc_test_2_tb.spiflash.io1
+wrapped_hack_soc_test_2_tb.spiflash.io2
+wrapped_hack_soc_test_2_tb.spiflash.io3
+@22
+wrapped_hack_soc_test_2_tb.spiflash.spi_addr[23:0]
+@420
+wrapped_hack_soc_test_2_tb.spiflash.bytecount
+@1000200
+-spiflash
+@28
+wrapped_hack_soc_test_2_tb.uut.housekeeping.cwstb
 [pattern_trace] 1
 [pattern_trace] 0
