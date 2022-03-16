@@ -23,9 +23,9 @@ set ::env(MACRO_PLACEMENT_CFG) $::env(DESIGN_DIR)/macro_placement.cfg
 
 set ::env(PDN_CFG) $::env(DESIGN_DIR)/pdn.tcl
 
-set ::env(FP_HORIZONTAL_HALO) 5
-# set ::env(FP_HORIZONTAL_HALO) 3
-set ::env(FP_VERTICAL_HALO) 5
+set ::env(FP_PDN_HORIZONTAL_HALO) 5
+# set ::env(FP_PDN_HORIZONTAL_HALO) 3
+set ::env(FP_PDN_VERTICAL_HALO) 5
 
 
 # set ::env(FP_PDN_VPITCH) 130
@@ -59,8 +59,8 @@ set ::env(CLOCK_PORT) "wb_clk_i"
 
 # macro needs to work inside Caravel, so can't be core and can't use metal 5
 set ::env(DESIGN_IS_CORE) 0
-set ::env(GLB_RT_MAXLAYER) 5
-set ::env(GLB_RT_MINLAYER) 2
+set ::env(RT_MAX_LAYER) {met4}
+set ::env(RT_MIN_LAYER) {met1}
 
 
 # define power straps so the macro works inside Caravel's PDN
