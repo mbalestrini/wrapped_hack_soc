@@ -27,4 +27,4 @@ hack_soc/src/vram_write_fifo.v
 hack_soc/src/rom_stream_loader.v
 hack_soc/src/boot_logo.v
 hack_soc/src/DFFRF_2R1W.v
-includes/params.v hack_soc/src/includes/params.v 
+
