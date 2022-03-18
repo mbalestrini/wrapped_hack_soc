@@ -46,8 +46,13 @@ set ::env(CELL_PAD) "0"
 #set ::env(DIODE_PADDING) "2"
 
 
-# set absolute size of the die to 300 x 300 um
-set ::env(DIE_AREA) "0 0 392.25 398"
+# For MPW-4 DFFRAM Macro (macro width 378.7)
+# set ::env(DIE_AREA) "0 0 392.25 398"
+
+# For MPW-5 DFFRAM Macro (macro width 358.8)
+set ::env(DIE_AREA) "0 0 372.35 398"
+
+
 set ::env(FP_SIZING) absolute
 
 # define number of IO pads
@@ -90,7 +95,9 @@ set ::env(SYNTH_STRATEGY) "AREA 2"
 # Enabled = 1, Disabled = 0
 #set ::env(SYNTH_NO_FLAT) 1
 
+set ::env(PL_RESIZER_TIMING_OPTIMIZATIONS) 1
 set ::env(PL_RESIZER_HOLD_SLACK_MARGIN) 0.2
+set ::env(GLB_RESIZER_TIMING_OPTIMIZATIONS) 1
 set ::env(GLB_RESIZER_HOLD_SLACK_MARGIN) 0.2
 
 set ::env(ROUTING_CORES) 8
@@ -111,6 +118,6 @@ set ::env(ROUTING_CORES) 8
 set ::env(FP_PIN_ORDER_CFG)  "$::env(DESIGN_DIR)/pin_order.cfg"
 #set ::env(LEFT_MARGIN_MULT) 20
 #set ::env(RIGHT_MARGIN_MULT) 20
-set ::env(FP_TAPCELL_DIST) 10
+set ::env(FP_TAPCELL_DIST) 8
 
 set ::env(BASE_SDC_FILE) "$::env(DESIGN_DIR)/wrapped_hack_soc_dffram.sdc"
